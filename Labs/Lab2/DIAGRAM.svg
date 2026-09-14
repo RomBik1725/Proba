@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="420" font-family="Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><polygon points="0 0, 12 4, 0 8" fill="#333"/></marker>
+  </defs>
+<rect width="750" height="420" fill="#f8f9fa"/>
+<text x="20" y="28" font-size="16" font-weight="bold" fill="#333">Лаб.2 — Конструкторы. Свойства. Валидация.</text>
+<text x="20" y="46" font-size="11" fill="#777">Цепочка this + 4 способа инициализации</text>
+<rect x="23" y="65" width="310" height="235" rx="3" fill="#ddd"/>
+<rect x="20" y="62" width="310" height="235" rx="3" fill="white" stroke="#333" stroke-width="1.5"/>
+<rect x="20" y="62" width="310" height="28" rx="3" fill="#4A90D9" stroke="#333" stroke-width="1.5"/>
+<text x="175" y="81" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Point3D</text>
+<line x1="20" y1="90" x2="330" y2="90" stroke="#333" stroke-width="1"/>
+<text x="28" y="105" font-size="11" fill="#555">- x, y, z : double = 0.0</text>
+<text x="28" y="122" font-size="11" fill="#555">- name : string = "Неизвестно"</text>
+<line x1="20" y1="136" x2="330" y2="136" stroke="#333" stroke-width="1"/>
+<text x="28" y="152" font-size="11" fill="#222">+ Point3D() → :this(0,0,0)</text>
+<text x="28" y="169" font-size="11" fill="#222">+ Point3D(x,y,z) → :this(x,y,z,"Точка")</text>
+<text x="28" y="186" font-size="11" fill="#222">+ Point3D(x,y,z,name) — основной</text>
+<text x="28" y="203" font-size="11" fill="#222">+ X/Y/Z {validate: IsFinite}</text>
+<text x="28" y="220" font-size="11" fill="#222">+ Name {?? "Неизвестно"}</text>
+<text x="28" y="237" font-size="11" fill="#222">+ DistanceToOrigin() : double</text>
+<text x="28" y="254" font-size="11" fill="#222">+ Print() : void</text>
+<rect x="350" y="62" width="370" height="160" rx="5" fill="white" stroke="#bbb"/>
+<rect x="350" y="62" width="370" height="24" rx="5" fill="#fce4ec" stroke="#bbb"/>
+<text x="360" y="78" font-size="12" font-weight="bold" fill="#880e4f">Цепочка конструкторов (this)</text>
+<rect x="370" y="98" width="290" height="26" rx="3" fill="#fce4ec" stroke="#f48fb1"/>
+<text x="378" y="115" font-size="11" fill="#880e4f">new Point3D()</text>
+<line x1="515" y1="124" x2="515" y2="148" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="520" y="140" font-size="9" fill="#999">:this(0,0,0)</text>
+<rect x="370" y="150" width="290" height="26" rx="3" fill="#fce4ec" stroke="#f48fb1"/>
+<text x="378" y="167" font-size="11" fill="#880e4f">Point3D(0,0,0)</text>
+<line x1="515" y1="176" x2="515" y2="200" stroke="#333" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="520" y="192" font-size="9" fill="#999">:this(x,y,z,"Точка")</text>
+<rect x="370" y="202" width="290" height="26" rx="3" fill="#fce4ec" stroke="#f48fb1"/>
+<text x="378" y="219" font-size="11" fill="#880e4f">Point3D(0,0,0,"Точка") ← основной</text>
+<rect x="20" y="318" width="710" height="60" rx="4" fill="#e3f2fd" stroke="#1565c0" stroke-width="1"/>
+<text x="30" y="338" font-size="11" font-weight="bold" fill="#1565c0">4 способа инициализации полей:</text>
+<text x="30" y="356" font-size="10" fill="#333">1) значение в поле: double x=0.0  |  2) значение в свойстве: set{name=value??"Н"}  |  3) параметр конструктора  |  4) инициализатор: new Point3D{X=1,Y=2}</text>
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" font-family="Arial,sans-serif">
+
+  <defs>
+    <marker id="arr" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#333"/>
+    </marker>
+    <marker id="inh" markerWidth="14" markerHeight="10" refX="1" refY="5" orient="auto">
+      <polygon points="0 5, 13 0, 13 10" fill="white" stroke="#333" stroke-width="1.5"/>
+    </marker>
+  </defs>
+<rect width="700" height="420" fill="#f8f9fa"/>
+<text x="20" y="28" font-size="16" font-weight="bold" fill="#333">Лаб.1 — Класс Point3D</text>
+<text x="20" y="48" font-size="11" fill="#777">Диаграмма классов + поток Main()</text>
+<rect x="23" y="73" width="260" height="201" rx="3" fill="#ddd"/>
+<rect x="20" y="70" width="260" height="201" rx="3" fill="white" stroke="#333" stroke-width="1.5"/>
+<rect x="20" y="70" width="260" height="28" rx="3" fill="#4A90D9" stroke="#333" stroke-width="1.5"/>
+<text x="150" y="89" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Point3D</text>
+<line x1="20" y1="98" x2="280" y2="98" stroke="#333" stroke-width="1"/>
+<text x="28" y="111" font-size="11" fill="#555">- x : double</text>
+<text x="28" y="128" font-size="11" fill="#555">- y : double</text>
+<text x="28" y="145" font-size="11" fill="#555">- z : double</text>
+<line x1="20" y1="159" x2="280" y2="159" stroke="#333" stroke-width="1"/>
+<text x="28" y="172" font-size="11" fill="#222">+ Point3D()</text>
+<text x="28" y="189" font-size="11" fill="#222">+ Point3D(x,y,z)</text>
+<text x="28" y="206" font-size="11" fill="#222">+ X/Y/Z : double {get;set}</text>
+<text x="28" y="223" font-size="11" fill="#222">+ Input() : void</text>
+<text x="28" y="240" font-size="11" fill="#222">+ DistanceToOrigin() : double</text>
+<text x="28" y="257" font-size="11" fill="#222">+ Print() : void</text>
+<rect x="320" y="70" width="360" height="330" rx="5" fill="white" stroke="#bbb" stroke-width="1"/>
+<rect x="320" y="70" width="360" height="24" rx="5" fill="#e3f2fd" stroke="#bbb" stroke-width="1"/>
+<text x="330" y="86" font-size="12" font-weight="bold" fill="#1565c0">Поток Main()</text>
+<rect x="340" y="102" width="310" height="20" rx="3" fill="#e8f5e9" stroke="#a5d6a7"/>
+<text x="345" y="115" font-size="10" fill="#1b5e20">Запуск программы</text>
+<line x1="495" y1="122" x2="495" y2="136" stroke="#666" stroke-width="1" marker-end="url(#arr)"/>
+<rect x="340" y="136" width="310" height="20" rx="3" fill="#e8f5e9" stroke="#a5d6a7"/>
+<text x="345" y="149" font-size="10" fill="#1b5e20">p1 = new Point3D() → p1.Input()</text>
+<line x1="495" y1="156" x2="495" y2="170" stroke="#666" stroke-width="1" marker-end="url(#arr)"/>
+<rect x="340" y="170" width="310" height="20" rx="3" fill="#e8f5e9" stroke="#a5d6a7"/>
+<text x="345" y="183" font-size="10" fill="#1b5e20">p1.Print() + p1.DistanceToOrigin()</text>
+<line x1="495" y1="190" x2="495" y2="204" stroke="#666" stroke-width="1" marker-end="url(#arr)"/>
+<rect x="340" y="204" width="310" height="20" rx="3" fill="#e8f5e9" stroke="#a5d6a7"/>
+<text x="345" y="217" font-size="10" fill="#1b5e20">p2 = new Point3D(3, 4, 12)</text>
+<line x1="495" y1="224" x2="495" y2="238" stroke="#666" stroke-width="1" marker-end="url(#arr)"/>
+<rect x="340" y="238" width="310" height="20" rx="3" fill="#e8f5e9" stroke="#a5d6a7"/>
+<text x="345" y="251" font-size="10" fill="#1b5e20">p2.Print() → результат: 13.0</text>
+<rect x="20" y="290" width="240" height="48" rx="4" fill="#fffde7" stroke="#f9a825" stroke-width="1" stroke-dasharray="4,2"/>
+<text x="28" y="310" font-size="10" fill="#555">√(x²+y²+z²) — расстояние до начала координат</text>
+<text x="28" y="326" font-size="10" fill="#555">Пример: Point3D(3,4,12) → 13.0</text>
+</svg>
